@@ -9,7 +9,7 @@ class Scores() :
         name = input("총점을 구할 사람의 이름을 입력해주세요. : ")
         sum = 0
 
-        for i in range(len(file[name])):
+        for i in range(len(file)):
             sum = sum + file[name][i]
         return("%s님의 총점은 %d점 입니다."%(name, sum))
 
@@ -18,7 +18,7 @@ class Scores() :
         name = input("평균을 구할 사람의 이름을 입력해주세요. : ")
         sum = 0
 
-        for i in range(len(file[name])):
+        for i in range(len(file)):
             sum = sum + file[name][i]
         return("%s님의 평균은 %d점 입니다."%(name, sum / len(file[name])))
 
